@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Unit converter</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Unit converter</h2>
+
+        <menu>
+            <li><a href="#" id="botonAltura">Altura</a></li>
+            <li><a href="#" id="botonPeso">Peso</a></li>
+            <li><a href="#" id="botonTemperatura">Temperatura</a></li>
+        </menu>
+    
+    
+        <form id="formulario">
+            <label for="unidad">Ingrese la altura a convertir:</label>
+            <input type="text" id="unidad" required/>
+            
+            <label for="convertirDe">Convertir de:</label>
+                <select id="convertirDe">
+                    <option value="centimetros">centimetros</option>
+                    <option value="metros">metros</option>
+                    <option value="pulgadas">pulgadas</option>
+                    <option value="pies">pies</option>
+                </select>
+        
+            <label for="convertirA">Convertir a:</label>
+                <select id="convertirA">
+                    <option value="centimetros">centimetros</option>
+                    <option value="metros">metros</option>
+                    <option value="pulgadas">pulgadas</option>
+                    <option value="pies">pies</option>
+                </select>
+            <input type="submit" value="Convertir">
+        </form>     
+    </div>
+
+    <div class="contenedor">
+        <form id="formularioReset">
+            <h3>Resultado de la conversion</h3>
+            <h2 id="resultado"></h2>
+            <input type="submit" value="Restablecer">
+        </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
